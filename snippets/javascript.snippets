@@ -71,6 +71,44 @@ snippet pt
 	propTypes: {
 		${1}: React.PropTypes.${2:string}
 	},
+
+
+snippet pt6
+	static propTypes = {
+		${1}: PropTypes.${2:string}
+	}
+
+
+snippet pta
+	PropTypes.array.isRequired
+
+snippet ptany
+	PropTypes.any.isRequired
+
+snippet ptb
+	PropTypes.bool.isRequired
+
+snippet pte
+	PropTypes.element.isRequired
+
+snippet ptf
+	PropTypes.func.isRequired
+
+snippet ptn
+	PropTypes.number.isRequired
+
+snippet ptnode
+	PropTypes.node.isRequired
+
+snippet pto
+	PropTypes.object.isRequired
+
+snippet pts
+	PropTypes.string.isRequired
+
+snippet ptshape
+	PropTypes.shape.({ $1: $2 }).isRequired
+
 snippet rcc
 	var React = require('react');
 	var PropTypes = React.PropTypes;
