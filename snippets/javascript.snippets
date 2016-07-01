@@ -107,7 +107,8 @@ snippet pts
 	PropTypes.string.isRequired
 
 snippet ptshape
-	PropTypes.shape.({ $1: $2 }).isRequired
+	PropTypes.shape.({ ${1}: ${2} }).isRequired
+
 
 snippet rcc
 	var React = require('react');
@@ -168,6 +169,11 @@ snippet ren6
 
 snippet sst
 	setState({
+		${1}: ${2}
+	});
+
+snippet sst6
+	this.setState({
 		${1}: ${2}
 	});
 snippet scu
