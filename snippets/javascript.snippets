@@ -28,6 +28,11 @@ snippet cx
 	cx({
 		${1}: ${2}
 	});
+
+snippet dp
+	static defaultProps = {
+		${1}
+	}
 snippet fup
 	forceUpdate(${1:callback});
 snippet gdp
@@ -67,6 +72,9 @@ snippet pt
 		${1}: React.PropTypes.${2:string}
 	},
 snippet rcc
+	var React = require('react');
+	var PropTypes = React.PropTypes;
+
 	var ${1:ClassName} = React.createClass({
 
 		render: function() {
@@ -76,12 +84,50 @@ snippet rcc
 		}
 
 	});
+
+	module.exports = $1;
+	
+snippet rcc6
+	import React, { PropTypes } from 'react'
+
+	const ${1:ClassName} = React.createClass({
+		render() {
+			return (
+				${0:<div />}
+			);
+		}
+	});
+
+	export default $1;
+
+
+snippet rcs
+	import React from 'react';
+
+	const ${1:ComponentName} = (props) => {
+		return (
+			${0:<div />
+		)
+	}
+
+	export default $1;
+
+
 snippet ren
 	render: function() {
 		return (
 			${1:<div />}
 		);
 	}
+
+
+snippet ren6
+	render() {
+		return (
+			${1:<div />}
+		);
+	}
+
 snippet sst
 	setState({
 		${1}: ${2}
@@ -92,6 +138,9 @@ snippet scu
 	},
 snippet props
 	this.props.${1}
+
+snippet props6
+	const { $1 } = this.props;
 snippet state
 	this.state.${1}
 snippet trp
