@@ -134,7 +134,7 @@ snippet rcc
 	module.exports = $1;
 	
 snippet rcc6
-	import React, { PropTypes } from 'react'
+	import React, { PropTypes } from 'react';
 
 	const ${1:ClassName} = React.createClass({
 		render() {
@@ -147,13 +147,26 @@ snippet rcc6
 	export default $1;
 
 
+snippet rcd6
+	import React, { PropTypes, Component } from 'react';
+	class ${1:ClassName} extends Component {
+		render() {
+			return (
+				${0:<div />}
+			);
+		}
+	}
+
+	export default $1;
+
+
 snippet rcs
 	import React from 'react';
 
 	const ${1:ComponentName} = (props) => {
 		return (
-			${0:<div />
-		)
+			${0:<div />}
+		);
 	}
 
 	export default $1;
